@@ -34,16 +34,16 @@
       defer
       src="js/script.js"
     ></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <title>Jakub Głuch - adRespect-recruitment</title>
   </head>
-  <body class="w-auto h-auto inline-flex flex-col items-center bg-white">
+  <body class="w-full h-auto m-auto inline-flex flex-col items-center bg-white">
     <nav
       class="w-[1262px] h-auto flex py-[24px] px-0 justify-between items-center shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
     >
       <img
-        class="shrink-0 h-[19px]"
-        src="images/svg/giardDesign.svg"
-        alt="logo"
+        src="images/svg/giardDesignNav.svg"
+        alt="giardDesignNav"
       />
       <ul class="flex items-center gap-[48px]">
         <li>
@@ -329,21 +329,145 @@
           Nasze <i class="font-inter italic">projekty</i>
         </h1>
       </div>
-      <div
-        class="flex w-[1440px] pt-[120px] px-0 pb-[44px] flex-col items-start gap-[96px] bg-[#DCC1AB]"
-      >
-        <div>
-          <img />
-          <img />
-          <img />
-          <img />
-          <img />
-          <img />
-          <img />
-          <img />
-          <img />
+
+      <div class="grid">
+        <div class="grid-item mb-[40px] w-[451px] h-[601px]">
+          <img src="images/placeholders/9.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[452px] h-[338px]">
+          <img src="images/placeholders/8.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[451px] h-[451px]">
+          <img src="images/placeholders/7.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[451px] h-[452px]">
+          <img src="images/placeholders/6.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[452px] h-[452px]">
+          <img src="images/placeholders/5.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[451px] h-[603px]">
+          <img src="images/placeholders/4.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[451px] h-[338px]">
+          <img src="images/placeholders/3.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[452px] h-[601px]">
+          <img src="images/placeholders/2.png" />
+        </div>
+        <div class="grid-item mb-[40px] w-[451px] h-[338px]">
+          <img src="images/placeholders/1.png" />
+        </div>
+        <div
+          class="absolute inset-0 w-full h-full shrink-0 bg-[linear-gradient(360deg,_#DCC1AB_0%,_rgba(214,_183,_158,_0.00)_100%)]"
+        >
+          <button
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 inline-flex pt-[12px] px-[22px] pb-[14px] items-center gap-[8px] rounded-[200px] border-[1px] border-solid border-black"
+          >
+            <p
+              class="text-black text-center font-inter text-[16px] font-normal leading-[150%]"
+            >
+              Rozwiń
+            </p>
+            <img
+              src="images/svg/arrowBotBlack.svg"
+              alt="arrowBotBlack"
+            />
+          </button>
         </div>
       </div>
     </section>
+    <section
+      class="flex w-[1440px] py-[60px] px-0 flex-col justify-center items-center gap-[10px] bg-[#F5F0EC]"
+    >
+      <div
+        class="flex w-[1040px] py-[120px] px-[110px] items-end gap-[64px] bg-[#1B5B31]"
+      >
+        <div class="w-[599px] shrink-0">
+          <h1
+            class="font-montserrat text-[40px] font-normal leading-[120%] tracking-[-2px] text-[#F5F0EC]"
+          >
+            Zostańmy w kontakcie! Znajdziesz nas na
+            <i
+              class="font-inter italic font-medium leading-[120%] tracking-[1px]"
+              >Instagramie.</i
+            >
+          </h1>
+        </div>
+        <div class="flex w-[157px] flex-col items-start gap-[24px] shrink-0">
+          <p
+            class="self-stretch text-[#F5F0EC] font-inter font-normal leading-[150%] tracking-[-0.16px]"
+          >
+            Śledź nasze najnowsze realizacje!
+          </p>
+          <button
+            class="flex pt-[10px] px-[24px] pb-[12px] items-center gap-[10px] rounded-[200px] bg-[#F5F0EC]"
+          >
+            <p
+              class="text-[#1B5B31] text-center font-inter text-[16px] font-normal leading-[150%]"
+            >
+              Instagram
+            </p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="flex w-[1440px] py-[80px] px-[256px] flex-col items-center gap-[120px] bg-black"
+    >
+      <div class="flex w-[1040px] flex-col items-start gap-[62px]">
+        <div class="flex justify-between items-center self-stretch">
+          <img
+            src="images/svg/giarddesignFooter.svg"
+            alt="giarddesignFooter"
+          />
+          <div class="flex items-center gap-[24px]">
+            <p
+              class="font-inter text-[16px] font-normal leading-[150%] tracking-[-0.16px] text-[#F5F0EC]"
+            >
+              Daj znać, co możemy dla Ciebie zrobić!
+            </p>
+            <button
+              class="flex pt-[12px] px-[24px] pb-[14px] items-center gap-[10px] rounded-[200px] bg-[#1B5B31]"
+            >
+              <p
+                class="text-center font-inter text-[16px] font-normal leading-[150%] text-[#F5F0EC]"
+              >
+                Skontaktuj się z nami
+              </p>
+            </button>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[#F5F0EC]"></div>
+        <div class="flex justify-between items-start self-stretch">
+          <div
+            class="flex items-center gap-[48px] font-inter text-[14px] font-normal leading-[150%] tracking-[-0.14px] text-[#F5F0EC]"
+          >
+            <a href="#">Kontakt</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Linkedin</a>
+          </div>
+          <div
+            class="flex items-start gap-[48px] font-inter text-[14px] font-normal leading-[150%] tracking-[-0.14px] text-[#F5F0EC]"
+          >
+            <p>000-000-000</p>
+            <p>giarddesign@kontakt.pl</p>
+          </div>
+        </div>
+        <div
+          class="flex w-[1040px] justify-between items-center text-[#F5F0EC] font-inter text-[16px] font-normal leading-[150%] tracking-[-0.16px]"
+        >
+          <p>Prawa zastrzeżone © 2022</p>
+          <div class="flex items-center gap-[16px]">
+            <p>made by</p>
+            <img
+              src="images/svg/adRespectLogo.svg"
+              alt="adRespectLogo"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
